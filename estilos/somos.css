@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000;
+}
+
+header {
+    background: #000000de;
+    color: #fff;
+    padding: 10px 20px;
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.site-titulo {
+    text-align: center;
+    flex-grow: 1; /* faz o titulo ficar no centro */
+}
+
+.site-titulo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.site-titulo p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:#E30000 ;
+    text-decoration: underline;
+}
+
+main{
+    background-color: #333333;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+section#somos{
+    display:block;
+    justify-content: space-between;
+}
+
+h2, p{
+    color: #fff;
+    text-align: center;
+}
+
+#somos p{
+    width: 800px;
+    text-align: justify;
+}
+
+.img-somos {
+    text-align: center;
+}
+
+.img-somos img {
+    display: block;    
+    margin: auto;      
+    max-width: 100%;    
+    height: auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    /* position: fixed;
+    width: 100vw; */
+}
+
+@media (max-width: 800px) {
+    .header-container {
+        flex-direction: row;
+        text-align: center;
+        height: 150px;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        height: 90px;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    section#somos{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #somos p {
+        width: 100%;
+        text-align: justify;
+
+    }
+
+    .img-somos img {
+        width: 40%;
+        height: auto;
+    }
+
+   
+}
+
+
